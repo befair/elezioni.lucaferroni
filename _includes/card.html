@@ -1,18 +1,19 @@
 <div class="card shadow-lg my-4">
     <img class="card-img-top" src="{{ include.img }}" alt="">
     <div class="card-body">
-        <h4 class="card-title"><b>{{ include.title }}</b><a href="{{ include.pdf }}" download
-                class="badge badge-secondary mx-2 magic-badge-pdf"><i class="fas fa-file-download mr-2"></i>PDF</a></h4>
+        <h4 class="card-title"><b>{{ include.title }}</b></h4>
         <p class="card-text">{{ include.subtitle }}</p>
-        <a href="#" class="badge badge-secondary mx-2 magic-badge"><i class="fas fa-plus-circle mr-2"></i>Aderisci
+        <a href="{{ include.pdf }}" download class="badge badge-secondary mx-2 magic-badge-pdf"><i
+                class="fas fa-file-download mr-2"></i>Scarica il PDF</a><a href="{{ include.mailto }}"
+            class="badge badge-secondary mx-2 magic-badge"><i class="fas fa-plus-circle mr-2"></i>Aderisci
             ora!</a>
     </div>
     <hr class="rounded mx-4">
     <div class="card-footer">
         {% for image in site.static_files %}
         {% if image.path contains 'img/faces' %}
-        <img src="{{ site.baseurl }}{{ image.path }}" class="rounded-circle m-2 politician-not-agree"
-            style="height: 80px; width: 80px; object-fit: cover" />
+        <a><img src="{{ site.baseurl }}{{ image.path }}" class="rounded-circle m-2 politician-not-agree"
+                style="height: 80px; width: 80px; object-fit: cover" /></a>
         {% endif %}
         {% endfor %}
     </div>
