@@ -54,16 +54,10 @@ hr.rounded {
 
 .magic-badge-pdf {
   border-radius: 60px;
-  background-color: #0069d9;
+  background-color: #d2d2d2;
   padding: 12px;
   text-transform: uppercase;
   font-size: 14px;
-}
-
-@media (max-width: 1199.98px) {
-  .luca-ferroni {
-    display: none;
-  }
 }
 
 #page-content {

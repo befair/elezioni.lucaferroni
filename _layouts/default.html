@@ -14,6 +14,10 @@
     <link href="css/elezioni.lucaferroni.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/icon.png" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+
     <meta name="theme-color" content="#0069D9" />
 
 </head>
@@ -65,17 +69,17 @@
                         </div>
                     </div>
                     <div class="card-deck text-center">
-                        {% include card.html img="img/school.svg" title="Educazione" subtitle="Posizionamento politico e socio-educativo del progetto DOORS,
-                                    frutto del lavoro condiviso di insegnanti, educatori, operatori sociali,
-                                    psicologi di 27 partners sul territorio italiano" %}
-                        {% include card.html img="img/internet.svg" title="Internet" subtitle="Posizione italiana sui Principi Generali di Internet aggiornata al
-                                    17 Novembre
-                                    2012
-                                    per un mondo digitale migliore con un impatto sul settore sociale ed economico" %}
-                        {% include card.html img="img/home.svg" title="CRT" subtitle="Sintesi di Luca Ferroni di vari percorsi dalla comunità di fabbrica
-                                    di
-                                    Olivetti, ai Distretti di Economia Solidale, per un territorio che respiri gioia,
-                                    leggerezza e concretezza" %}
+                        {% include card.html pdf="assets/school.pdf" img="img/school.svg" title="Educazione" subtitle="Posizionamento politico e socio-educativo del progetto DOORS,
+                                                            frutto del lavoro condiviso di insegnanti, educatori, operatori sociali,
+                                                            psicologi di 27 partners sul territorio italiano" %}
+                        {% include card.html pdf="assets/internet.pdf" img="img/internet.svg" title="Internet" subtitle="Posizione italiana sui Principi Generali di Internet aggiornata al
+                                                            17 Novembre
+                                                            2012
+                                                            per un mondo digitale migliore con un impatto sul settore sociale ed economico" %}
+                        {% include card.html pdf="assets/crt.pdf" img="img/home.svg" title="CRT" subtitle="Sintesi di Luca Ferroni di vari percorsi dalla comunità di fabbrica
+                                                            di
+                                                            Olivetti, ai Distretti di Economia Solidale, per un territorio che respiri gioia,
+                                                            leggerezza e concretezza" %}
                     </div>
                     <div class="card text-center bg-white my-3 shadow" style="margin: auto;">
                         <div class="card-body">
