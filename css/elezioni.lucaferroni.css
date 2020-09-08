@@ -60,6 +60,7 @@ hr.rounded {
   font-size: 14px;
 }
 
-#page-content {
-  flex: 1 0 auto;
+#spacer {
+  height: 100px;
+  background: transparent;
 }
