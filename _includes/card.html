@@ -12,8 +12,8 @@
     <div class="card-footer">
         {% for image in site.static_files %}
         {% if image.path contains 'img/faces' %}
-        <a><img src="{{ site.baseurl }}{{ image.path }}" class="rounded-circle m-2 politician-not-agree"
-                style="height: 80px; width: 80px; object-fit: cover" /></a>
+        <img src="{{ site.baseurl }}{{ image.path }}" class="rounded-circle m-2 politician-not-agree"
+            style="height: 80px; width: 80px; object-fit: cover" />
         {% endif %}
         {% endfor %}
     </div>
