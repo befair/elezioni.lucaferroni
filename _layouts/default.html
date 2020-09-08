@@ -32,7 +32,7 @@
                 <div class="row align-items-center text-center">
                     <div class="card text-center text-white bg-primary my-3 shadow">
                         <div class="card-body">
-                            <h1 class="card-title"><b>Elezioni Marche 2020</b></h1>
+                            <h1 class="card-title"><i class="fas fa-poll mx-2"></i><b>{{ page.title }}</b></h1>
                             <hr class="rounded mx-4" style="border-top: 6px solid #3f9bff;">
                             <p class="card-text" style="text-align: left;"><b>Può la sofferenza di una madre partorire
                                     una nuova
@@ -87,23 +87,22 @@
                         mailto:segreteria@befair.it?subject=Adesione%20al%20documento%20%22Centri%20di%20Rigenerazione%20Territoriale%22&body=Con%20la%20presente%2C%0A%0AIl%2FLa%20sottoscritto%2Fa%20_______________________________%20candidato%2Fa%0Apresidente%20alle%20elezioni%20Marche%202020%2C%20aderisce%20al%20documento%20%22Centri%20di%20Rigenerazione%20Territoriale%22%0A%0ANel%20documento%20Luca%20Ferroni%20va%20ed%20evidenziare%20la%20necessit%C3%A0%20di%20creare%20dei%20luoghi%20per%20l'incontro%20tra%20i%20bisogni%20e%20le%20opportunit%C3%A0%20offerte%20dal%20territorio%20a%20partire%20dal%20cambio%20di%20prospettiva%20che%20%C3%A8%20la%20persona%20ad%20essere%20valorizzata%20ed%20accompagnata%20nella%20sperimentazione%20di%20ci%C3%B2%20che%20pu%C3%B2%20fare%20di%20utile%20e%20bello%20per%20se%20stessa%20e%20per%20gli%20altri.%0A%0AIl%20centro%20esercita%20le%20sue%20attivit%C3%A0%20con%20le%20migliori%20buone%20pratiche%20coniugando%20la%20produttivit%C3%A0%20di%20Giappone%20e%20America%20con%20lo%20spirito%20artistico%20e%20culturale%20italiano.%20%0A%0A1.%20Fare%20un%20elenco%20se%20non%20si%20condividono%20tutti%20i%20punti%0A%0A2.%20Aggiungere%20commenti%2Fnote%2Fproposte%2Flink%20di%20riferimento%20su%20uno%20o%20pi%C3%B9%20punti%0A%0A3.%20Inserire%20un%20numero%20di%20telefono%20da%20chiamare%20o%20raggiungere%20via%20chat%20per%20verificare%20la%20mail%20(non%20abbiamo%20usato%20la%20PEC).%0A%0A%0AGrazie%2C%20cordiali%20saluti%0A%0ALuca%20Ferroni
                         {% endcapture %}
 
-                        {% include card.html mailto=mailto_school pdf="assets/school.pdf" img="img/school.svg" title="Educazione" subtitle="Posizionamento politico e socio-educativo del progetto DOORS,
+                        {% include card.html mailto=mailto_school pdf="assets/school.pdf" icon="fas fa-university" img="img/school.svg" title="Educazione" subtitle="Posizionamento politico e socio-educativo del progetto DOORS,
                                                             frutto del lavoro condiviso di insegnanti, educatori, operatori sociali,
                                                             psicologi di 27 partners sul territorio italiano" %}
-                        {% include card.html mailto=mailto_internet pdf="assets/internet.pdf" img="img/internet.svg" title="Internet" subtitle="Posizione italiana sui Principi Generali di Internet aggiornata al
+                        {% include card.html mailto=mailto_internet pdf="assets/internet.pdf"  icon="fas fa-globe" img="img/internet.svg" title="Internet" subtitle="Posizione italiana sui Principi Generali di Internet aggiornata al
                                                             17 Novembre
                                                             2012
                                                             per un mondo digitale migliore con un impatto sul settore sociale ed economico" %}
-                        {% include card.html mailto=mailto_crt pdf="assets/crt.pdf" img="img/home.svg" title="Centri di Rigenerazione Territoriale" subtitle="Sintesi di Luca Ferroni di vari percorsi dalla comunità di fabbrica
+                        {% include card.html mailto=mailto_crt pdf="assets/crt.pdf" icon="fas fa-universal-access" img="img/home.svg" title="Centri di Rigenerazione Territoriale" subtitle="Sintesi di Luca Ferroni di vari percorsi dalla comunità di fabbrica
                                                             di
                                                             Olivetti, ai Distretti di Economia Solidale, per un territorio che respiri gioia,
                                                             leggerezza e concretezza" %}
                     </div>
                     <div class="card text-center bg-white my-3 shadow" style="margin: auto;">
                         <div class="card-body">
-                            <p class="card-text">Questo sito è rivolto alle Marche e inseriremo le adesioni e
-                                i commenti delle liste marchigiane, ma può essere riutilizzato
-                                per altre regioni da chi lo desidera.
+                            <p class="card-text">
+                                {{ page.sub }}
                                 <br>
                                 <br>
                                 Il software è rilasciato in licenza <b>AGPLv3</b> e i contenuti
