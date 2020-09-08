@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,700;1,400&display=swap");
 
 body {
-  font-family: 'Titillium Web', sans-serif !important;
+  font-family: "Titillium Web", sans-serif !important;
   height: 100%;
   background-color: #ffffff;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1860' height='223.2' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='0.1' stroke-opacity='0.46'%3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
@@ -34,9 +34,9 @@ hr.rounded {
 }
 
 .card-footer {
-  padding: .75rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   background-color: transparent;
-  border-top: 0px solid rgba(0, 0, 0, .125);
+  border-top: 0px solid rgba(0, 0, 0, 0.125);
 }
 
 .masthead {
@@ -47,6 +47,14 @@ hr.rounded {
 .magic-badge {
   border-radius: 60px;
   background-color: #66bf66;
+  padding: 12px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.magic-badge-pdf {
+  border-radius: 60px;
+  background-color: #0069d9;
   padding: 12px;
   text-transform: uppercase;
   font-size: 14px;
