@@ -1,0 +1,26 @@
+<div class="modal fade animate" id="modalPolitician" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content animate-bottom">
+            <div class="modal-header">
+                <h2><b>{{ include.name }}</b></h2>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                        class="fas fa-times text-muted"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row justify-content-start align-items-center">
+                        <div class="col-sm">
+                            <img src="{{ include.image }}" class="rounded-circle shadow img-fluid"
+                                style="object-fit: cover" alt="{{ politician.name }}" /></a>
+                        </div>
+                        <div class="col-sm my-4">
+                            <h5 style="text-align: left;">
+                                <i>"{{ include.dichiarazione }}"</i>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

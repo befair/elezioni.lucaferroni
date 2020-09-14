@@ -3,7 +3,7 @@
     <div class="card-body">
         <h4 class="card-title"><i class="{{ include.icon }} mx-2"></i><b>{{ include.title }}</b></h4>
         <p class="card-text">{{ include.subtitle }}</p>
-        <a data-toggle="modal" data-target="#{{ include.id }}" href="#{{ include.id }}" download
+        <a data-toggle="modal" data-target="#{{ include.id }}" href="#{{ include.id }}"
             class="badge badge-secondary mx-2 my-2 magic-badge-actions shadow"><i
                 class="fas fa-hand-point-right mr-2"></i>Azioni</a>
         <a href="{{ include.mailto }}" class="badge badge-secondary mx-2 my-2 magic-badge shadow"><i
@@ -14,10 +14,20 @@
     </div>
     <hr class="rounded mx-4">
     <div class="card-footer">
-        {% for image in site.static_files %}
-        {% if image.path contains 'img/faces' %}
-        <img src="{{ site.baseurl }}{{ image.path }}" class="rounded-circle m-2 politician-not-agree"
-            style="height: 80px; width: 80px; object-fit: cover" />
+        {% for politician in site.politicians %}
+
+        {% if politician.educazione == true and politician.educazione == true  %}
+        {% include modal_politician.html name=politician.name dichiarazione=politician.dichiarazione image=politician.image%}
+        <div class="item"><a data-toggle="modal" data-target="#modalPolitician" href="#modalPolitician">
+                <span class="notify-badge"><i class="fas fa-check"></i></span> <img src="{{ politician.image }}"
+                    class="rounded-circle agree-item m-2 shadow" style="height: 80px; width: 80px; object-fit: cover"
+                    alt="{{ politician.name }}" /></a>
+        </div>
+        {% else %}
+        <img src="{{ politician.image }}" class="rounded-circle m-2 politician-not-agree"
+            style="height: 80px; width: 80px; object-fit: cover" alt="{{ politician.name }}" />
+
+
         {% endif %}
         {% endfor %}
     </div>
