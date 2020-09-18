@@ -1,4 +1,4 @@
-<div class="modal fade animate" id="modalPolitician" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade animate" id="{{ include.number }}" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content animate-bottom">
             <div class="modal-header">
@@ -10,16 +10,19 @@
                 <div class="container">
                     <div class="row justify-content-start align-items-center">
                         <div class="col-sm">
-                            <img src="{{ include.image }}" class="rounded-circle shadow img-fluid"
-                                style="object-fit: cover" alt="{{ politician.name }}" /></a>
-                        </div>
-                        <div class="col-sm my-4">
+                            <img src="{{ include.image }}" class="rounded-circle shadow"
+                                style="object-fit: cover; height: 150px; width: 150px;"
+                                alt="{{ politician.name }}" /></a>
+                            <br>
+                            <br>
                             <h5 style="text-align: left;">
-                                <i>"{{ include.dichiarazione }}"</i>
+                                <i>{{ include.dichiarazione }}</i>
                             </h5>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="modal-footer">
             </div>
         </div>
     </div>
