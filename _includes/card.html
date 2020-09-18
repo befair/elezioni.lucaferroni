@@ -16,18 +16,18 @@
     <div class="card-footer">
         {% for politician in site.politicians %}
 
-        {% if politician.educazione == true and politician.educazione == true  %}
-        {% include modal_politician.html name=politician.name dichiarazione=politician.dichiarazione image=politician.image%}
-        <div class="item"><a data-toggle="modal" data-target="#modalPolitician" href="#modalPolitician">
-                <span class="notify-badge"><i class="fas fa-check"></i></span> <img src="{{ politician.image }}"
-                    class="rounded-circle agree-item m-2 shadow" style="height: 80px; width: 80px; object-fit: cover"
-                    alt="{{ politician.name }}" /></a>
+        {% if politician.educazione == true and politician.territorio == true and politician.internet == true  %}
+        {% include modal_politician.html name=politician.name number=politician.number dichiarazione=politician.dichiarazione image=politician.image%}
+        <div class="item">
+            <a data-toggle="modal" data-target="#{{ politician.number }}" href="#{{ politician.number }}">
+                <span class="notify-badge"><i class="fas fa-check"></i>
+                </span> <img src="{{ politician.image }}" class="rounded-circle agree-item m-2 shadow"
+                    style="height: 80px; width: 80px; object-fit: cover" alt="{{ politician.name }}" />
+            </a>
         </div>
         {% else %}
         <img src="{{ politician.image }}" class="rounded-circle m-2 politician-not-agree"
             style="height: 80px; width: 80px; object-fit: cover" alt="{{ politician.name }}" />
-
-
         {% endif %}
         {% endfor %}
     </div>
